@@ -6,7 +6,6 @@ import ru.dponyashov.sqlquery.sqllines.SqlLine;
 import java.util.List;
 
 public class FromLine implements SqlLine {
-    private final String command = "ON";
     private final JoinType joinType;
     private final String table;
     private final List<SqlLine> fromConditions;
@@ -25,7 +24,7 @@ public class FromLine implements SqlLine {
         sb.append(" ");
         sb.append(table);
         sb.append(" ");
-        sb.append(command);
+        sb.append("ON");
         fromConditions.forEach(sqlLine -> sb.append(sqlLine.lineText()));
         return sb.toString();
     }

@@ -88,7 +88,7 @@ public class HavingLine implements SqlLine {
                     value.append(", ");
                 }
             }
-            return String.format(" (%s)", value.toString());
+            return String.format(" (%s)", value);
         }
         return " " + valueText;
     }

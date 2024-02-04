@@ -6,7 +6,6 @@ import ru.dponyashov.sqlquery.sqllines.SqlLine;
 import java.util.List;
 
 public class FromBlock implements SqlBlock {
-    private final String command = "FROM";
     private final String table;
     private final List<SqlLine> fromLines;
 
@@ -18,7 +17,7 @@ public class FromBlock implements SqlBlock {
     @Override
     public String blockText() {
         StringBuilder sb = new StringBuilder();
-        sb.append(command);
+        sb.append("FROM");
         sb.append(" ");
         sb.append(table);
         sb.append(" ");

@@ -4,7 +4,7 @@ import ru.dponyashov.sqlquery.option.ValueType;
 import ru.dponyashov.sqlquery.sqllines.SqlLine;
 
 public class SetLine implements SqlLine {
-    private String replaceChar = "1";
+    private String replaceChar = "%s";
     private final String fieldName;
     private final ValueType fieldType;
 

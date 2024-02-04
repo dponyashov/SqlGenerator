@@ -2,8 +2,6 @@ package ru.dponyashov.sqlquery.impl;
 
 import ru.dponyashov.sqlquery.SqlQuery;
 import ru.dponyashov.sqlquery.sqlblock.SqlBlock;
-import ru.dponyashov.sqlquery.sqlblock.impl.SetBlock;
-import ru.dponyashov.sqlquery.sqlblock.impl.WhereBlock;
 
 public class UpdateQuery implements SqlQuery {
     private final String tableName;
