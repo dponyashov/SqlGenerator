@@ -1,6 +1,5 @@
 package ru.dponyashov.sqlquery.sqllines.impl;
 
-import ru.dponyashov.sqlquery.option.Operation;
 import ru.dponyashov.sqlquery.option.ValueType;
 import ru.dponyashov.sqlquery.sqllines.SqlLine;
 
@@ -21,9 +20,6 @@ public class ValueLine implements SqlLine {
                         fieldValue +
                         "\"";
             }
-//            case DATA, DIGIT, PERIOD, RANGE, QUERY -> {
-//                return fieldValue;
-//            }
             default -> {
                 return fieldValue;
             }
