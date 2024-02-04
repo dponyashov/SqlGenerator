@@ -7,7 +7,7 @@ import ru.dponyashov.sqlquery.option.ValueType;
 import ru.dponyashov.sqlquery.sqllines.SqlLine;
 
 public class WhereLine implements SqlLine {
-    private String replaceChar = "1";
+    private String replaceChar = "%s";
     private Parenthesis parenthesis;
     private Prefix prefix;
     private String fieldName;
